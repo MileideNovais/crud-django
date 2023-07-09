@@ -1,0 +1,91 @@
+
+**************************************************
+verificar versão python (python --version)
+
+criar ambiente virtual (python3 -m venv ./env)
+
+ativar o ambiente virtual (source ./env/bin/activate)
+
+instalar o django (pip install django)
+
+verificar versão do django instalada (python -m django --version)
+
+guardar suas dependências (pip freeze > requeriments.txt)
+
+***********************************************************
+
+criar o primeiro projeto (django-admin startproject projeto1)
+
+fazer as considerações do settings. py( arquivos estáticos e templates)
+
+mostrar o que tem na pasta (ls)
+
+entrar na pasta (cd projeto1)
+
+subir a aplicação (python manage.py runserver)
+
+crtl +  click no endereço
+
+criar primeiro aplicativo (python manage.py startapp app1)
+
+configuramos urls(projeto1 e app1)
+
+criamos uma views (index)
+
+
+criamos a pasta de templates
+
+criar migrações do molelo User (python manage.py makemigrations)
+
+apliquei as migrações (python manage.py migrate)
+
+python shell (python manage.py shell) verificação de criação de tabelas
+
+u
+verifica todos os usuários (User.objects.all())
+
+salvar os dados (user.save ())
+
+verifica o id do usuário (user.id)
+
+para sair (exit())
+
+criar o super usuário (python manage.py createsuperuser)
+
+registrar models no admin.py (app1)
+
+erro na inserção de dados:
+    mudar o campo no models
+    criar migrações do model User  (python manage.py makemigartions)
+    apliquei as migrações (python manage.py migrate)
+
+criar templates
+
+criar formularios
+
+testar formulário 
+
+jinja (engine de templates) -> código no template
+
+bootstrap (css pré-pronto)
+
+criação de páginas dinâmicas com método Post 
+
+criação de páginas dinâmicas  com query params
+
+
+
+
+
+testar
+
+
+pip install coverage
+
+coverage run manage.py test
+
+coverage report 
+
+coverage html
+
+python -m http.server
